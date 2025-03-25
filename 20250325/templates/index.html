@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>即時到站資訊</title>
+</head>
+<body>
+    <h1>即時到站資訊</h1>
+    <form method="POST">
+        <label for="station_name">輸入站名：</label>
+        <input type="text" id="station_name" name="station_name" required>
+        <button type="submit">查詢</button>
+    </form>
+
+    {% if search_result %}
+        <h2>搜尋結果</h2>
+        <ul>
+            {% for station, arrival_time in search_result %}
+                <li>站名：{{ station }}，到站時間：{{ arrival_time }}</li>
+            {% endfor %}
+        </ul>
+    {% elif station_data %}
+        <h2>所有車站資訊</h2>
+        <ul>
+            {% for station, arrival_time in station_data %}
+                <li>站名：{{ station }}，到站時間：{{ arrival_time }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
