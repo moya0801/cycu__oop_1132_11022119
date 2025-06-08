@@ -1,0 +1,2663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a64c6dcb5ed070500ab6c79727531e61 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a64c6dcb5ed070500ab6c79727531e61" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a64c6dcb5ed070500ab6c79727531e61 = L.map(
+                "map_a64c6dcb5ed070500ab6c79727531e61",
+                {
+                    center: [25.003464462686566, 121.42437790895522],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d23cd9943d8034fb4ac867196a3c85be = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d23cd9943d8034fb4ac867196a3c85be.addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var marker_496b706486f139a388076bffa68278ea = L.marker(
+                [24.972523, 121.3996193],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_dc5600b8b4f1646baa35465d552019b8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_766a609620c2742b0cf3cdeaf5efc215 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f7074a118d80f932385ef4478c5d366 = $(`<div id="html_2f7074a118d80f932385ef4478c5d366" style="width: 100.0%; height: 100.0%;"><b>指南客運樹林站</b><br>預估時間: 未知</div>`)[0];
+                popup_766a609620c2742b0cf3cdeaf5efc215.setContent(html_2f7074a118d80f932385ef4478c5d366);
+            
+        
+
+        marker_496b706486f139a388076bffa68278ea.bindPopup(popup_766a609620c2742b0cf3cdeaf5efc215)
+        ;
+
+        
+    
+    
+                marker_496b706486f139a388076bffa68278ea.setIcon(icon_dc5600b8b4f1646baa35465d552019b8);
+            
+    
+            var marker_4e517f4892095e55b3b4173b1774a1e8 = L.marker(
+                [24.974397, 121.400301],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_89c1b36f1d87607a0d94765bd0332723 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55d979bd38fa1117de0a51faa3d2159b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a277efe57c6124dc7caf7ae6c7cd7ca = $(`<div id="html_8a277efe57c6124dc7caf7ae6c7cd7ca" style="width: 100.0%; height: 100.0%;"><b>新興街口</b><br>預估時間: 未知</div>`)[0];
+                popup_55d979bd38fa1117de0a51faa3d2159b.setContent(html_8a277efe57c6124dc7caf7ae6c7cd7ca);
+            
+        
+
+        marker_4e517f4892095e55b3b4173b1774a1e8.bindPopup(popup_55d979bd38fa1117de0a51faa3d2159b)
+        ;
+
+        
+    
+    
+                marker_4e517f4892095e55b3b4173b1774a1e8.setIcon(icon_89c1b36f1d87607a0d94765bd0332723);
+            
+    
+            var marker_4c5aafe60f3ab21b83b041a7f45f0d57 = L.marker(
+                [24.975625, 121.401953],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_b40ceb6495d75fb59b5bc25e0a0ba0ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73d33661fa3920b5eba46a7f55a4a48f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_59f31cce2da849420cb84d31208aab7c = $(`<div id="html_59f31cce2da849420cb84d31208aab7c" style="width: 100.0%; height: 100.0%;"><b>山佳國小</b><br>預估時間: 未知</div>`)[0];
+                popup_73d33661fa3920b5eba46a7f55a4a48f.setContent(html_59f31cce2da849420cb84d31208aab7c);
+            
+        
+
+        marker_4c5aafe60f3ab21b83b041a7f45f0d57.bindPopup(popup_73d33661fa3920b5eba46a7f55a4a48f)
+        ;
+
+        
+    
+    
+                marker_4c5aafe60f3ab21b83b041a7f45f0d57.setIcon(icon_b40ceb6495d75fb59b5bc25e0a0ba0ee);
+            
+    
+            var marker_2d6f398855116e8c00217b3abf2190c5 = L.marker(
+                [24.97919, 121.40695],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_1686797944c1ff56dd710d172805cb02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f947a96bc89f2c958451d9093779e781 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cee03da3611b17551b031641adc734e3 = $(`<div id="html_cee03da3611b17551b031641adc734e3" style="width: 100.0%; height: 100.0%;"><b>東山</b><br>預估時間: 未知</div>`)[0];
+                popup_f947a96bc89f2c958451d9093779e781.setContent(html_cee03da3611b17551b031641adc734e3);
+            
+        
+
+        marker_2d6f398855116e8c00217b3abf2190c5.bindPopup(popup_f947a96bc89f2c958451d9093779e781)
+        ;
+
+        
+    
+    
+                marker_2d6f398855116e8c00217b3abf2190c5.setIcon(icon_1686797944c1ff56dd710d172805cb02);
+            
+    
+            var marker_abd7600b73596293375b24515360ceaf = L.marker(
+                [24.979984, 121.4087873],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_e3d0e229d5fd74b9e46aa0c02bcc6e00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_31daa0f8388d9f0e1e9f33f38705308f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e80df5badd3a107e3c092d71c898b55f = $(`<div id="html_e80df5badd3a107e3c092d71c898b55f" style="width: 100.0%; height: 100.0%;"><b>南樹林火車站</b><br>預估時間: 未知</div>`)[0];
+                popup_31daa0f8388d9f0e1e9f33f38705308f.setContent(html_e80df5badd3a107e3c092d71c898b55f);
+            
+        
+
+        marker_abd7600b73596293375b24515360ceaf.bindPopup(popup_31daa0f8388d9f0e1e9f33f38705308f)
+        ;
+
+        
+    
+    
+                marker_abd7600b73596293375b24515360ceaf.setIcon(icon_e3d0e229d5fd74b9e46aa0c02bcc6e00);
+            
+    
+            var marker_739e5be00101e1ff1f352dd2f2649042 = L.marker(
+                [24.982578, 121.412604],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_db11f8b1047093b9e10c43d68268945f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4a298728f851109d58e19b2ce9930bb0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cfe33973f30aa62ec0f19bbf298aad46 = $(`<div id="html_cfe33973f30aa62ec0f19bbf298aad46" style="width: 100.0%; height: 100.0%;"><b>東昇福德宮</b><br>預估時間: 未知</div>`)[0];
+                popup_4a298728f851109d58e19b2ce9930bb0.setContent(html_cfe33973f30aa62ec0f19bbf298aad46);
+            
+        
+
+        marker_739e5be00101e1ff1f352dd2f2649042.bindPopup(popup_4a298728f851109d58e19b2ce9930bb0)
+        ;
+
+        
+    
+    
+                marker_739e5be00101e1ff1f352dd2f2649042.setIcon(icon_db11f8b1047093b9e10c43d68268945f);
+            
+    
+            var marker_13ccf07687be45a2383517e829102a28 = L.marker(
+                [24.984168, 121.415842],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_50a2c95f5ce5e89c7c3b27bdfabdc8ea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_beed3f9df904cd616c93df6fa9b0330f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4af94c1cbd87a3f8ba58556c5061407b = $(`<div id="html_4af94c1cbd87a3f8ba58556c5061407b" style="width: 100.0%; height: 100.0%;"><b>東昇公園</b><br>預估時間: 未知</div>`)[0];
+                popup_beed3f9df904cd616c93df6fa9b0330f.setContent(html_4af94c1cbd87a3f8ba58556c5061407b);
+            
+        
+
+        marker_13ccf07687be45a2383517e829102a28.bindPopup(popup_beed3f9df904cd616c93df6fa9b0330f)
+        ;
+
+        
+    
+    
+                marker_13ccf07687be45a2383517e829102a28.setIcon(icon_50a2c95f5ce5e89c7c3b27bdfabdc8ea);
+            
+    
+            var marker_150b1c3f1449f228fd8f8f90ec16d3d9 = L.marker(
+                [24.985275, 121.418065],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_42056b5c622edc8e614a0003e4a19731 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e59a91003bde2f796a3caac1647d5a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfa4f4d0918b043a63d29bbfee5b3fa3 = $(`<div id="html_bfa4f4d0918b043a63d29bbfee5b3fa3" style="width: 100.0%; height: 100.0%;"><b>中山備前街口</b><br>預估時間: 未知</div>`)[0];
+                popup_5e59a91003bde2f796a3caac1647d5a6.setContent(html_bfa4f4d0918b043a63d29bbfee5b3fa3);
+            
+        
+
+        marker_150b1c3f1449f228fd8f8f90ec16d3d9.bindPopup(popup_5e59a91003bde2f796a3caac1647d5a6)
+        ;
+
+        
+    
+    
+                marker_150b1c3f1449f228fd8f8f90ec16d3d9.setIcon(icon_42056b5c622edc8e614a0003e4a19731);
+            
+    
+            var marker_a164f426308d82f70e1d503eadb3f35f = L.marker(
+                [24.98764, 121.42122],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_fe65c4ed5bb637767b200f2ef8e7b423 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_389863da17b2f92b9ef3608b796c9801 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b0c22b3c3b4a82d6349a9faa130c1c2 = $(`<div id="html_4b0c22b3c3b4a82d6349a9faa130c1c2" style="width: 100.0%; height: 100.0%;"><b>樹林仁愛醫院</b><br>預估時間: 未知</div>`)[0];
+                popup_389863da17b2f92b9ef3608b796c9801.setContent(html_4b0c22b3c3b4a82d6349a9faa130c1c2);
+            
+        
+
+        marker_a164f426308d82f70e1d503eadb3f35f.bindPopup(popup_389863da17b2f92b9ef3608b796c9801)
+        ;
+
+        
+    
+    
+                marker_a164f426308d82f70e1d503eadb3f35f.setIcon(icon_fe65c4ed5bb637767b200f2ef8e7b423);
+            
+    
+            var marker_75e3e104bfb3593ae809e2d7ac0f16a2 = L.marker(
+                [24.989525, 121.422411],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_654f77b6adf481eea2142db62e7477c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2770653f6e2f3548aa0388c2dfd1948e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5dff34ef7381519510402856cdba291d = $(`<div id="html_5dff34ef7381519510402856cdba291d" style="width: 100.0%; height: 100.0%;"><b>育英街口(天主堂)</b><br>預估時間: 未知</div>`)[0];
+                popup_2770653f6e2f3548aa0388c2dfd1948e.setContent(html_5dff34ef7381519510402856cdba291d);
+            
+        
+
+        marker_75e3e104bfb3593ae809e2d7ac0f16a2.bindPopup(popup_2770653f6e2f3548aa0388c2dfd1948e)
+        ;
+
+        
+    
+    
+                marker_75e3e104bfb3593ae809e2d7ac0f16a2.setIcon(icon_654f77b6adf481eea2142db62e7477c4);
+            
+    
+            var marker_7ab28ff6104b7a7c76deaf2faf060719 = L.marker(
+                [24.991841, 121.423739],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_5589566c25d508aed6a4c52ddebffa13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_62f4ca4bfb26a30f31d5d87be87590bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95fb8744ba1152d22cf4af744925f66f = $(`<div id="html_95fb8744ba1152d22cf4af744925f66f" style="width: 100.0%; height: 100.0%;"><b>樹林後火車站</b><br>預估時間: 未知</div>`)[0];
+                popup_62f4ca4bfb26a30f31d5d87be87590bb.setContent(html_95fb8744ba1152d22cf4af744925f66f);
+            
+        
+
+        marker_7ab28ff6104b7a7c76deaf2faf060719.bindPopup(popup_62f4ca4bfb26a30f31d5d87be87590bb)
+        ;
+
+        
+    
+    
+                marker_7ab28ff6104b7a7c76deaf2faf060719.setIcon(icon_5589566c25d508aed6a4c52ddebffa13);
+            
+    
+            var marker_4a410032b715c78f5c968fff5cfd8b4b = L.marker(
+                [24.993297, 121.424598],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_0a7abbcca93558f9d17e7cc0ea0b3754 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d2562eb9dfa0fcbd9da05d8ba07b21f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3a2876100c1dac435a7b9b37b7086df3 = $(`<div id="html_3a2876100c1dac435a7b9b37b7086df3" style="width: 100.0%; height: 100.0%;"><b>中山路口</b><br>預估時間: 未知</div>`)[0];
+                popup_9d2562eb9dfa0fcbd9da05d8ba07b21f.setContent(html_3a2876100c1dac435a7b9b37b7086df3);
+            
+        
+
+        marker_4a410032b715c78f5c968fff5cfd8b4b.bindPopup(popup_9d2562eb9dfa0fcbd9da05d8ba07b21f)
+        ;
+
+        
+    
+    
+                marker_4a410032b715c78f5c968fff5cfd8b4b.setIcon(icon_0a7abbcca93558f9d17e7cc0ea0b3754);
+            
+    
+            var marker_c8ff654065a300053d9cbb979c4b6158 = L.marker(
+                [24.994232, 121.4269598],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_77b3b044b7bec5a476926f722e883195 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b63195b9f98122d079bb28a615dfd52e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7142f51f9f93e8bb76a987be227a2de0 = $(`<div id="html_7142f51f9f93e8bb76a987be227a2de0" style="width: 100.0%; height: 100.0%;"><b>濟安宮(樹新路)</b><br>預估時間: 未知</div>`)[0];
+                popup_b63195b9f98122d079bb28a615dfd52e.setContent(html_7142f51f9f93e8bb76a987be227a2de0);
+            
+        
+
+        marker_c8ff654065a300053d9cbb979c4b6158.bindPopup(popup_b63195b9f98122d079bb28a615dfd52e)
+        ;
+
+        
+    
+    
+                marker_c8ff654065a300053d9cbb979c4b6158.setIcon(icon_77b3b044b7bec5a476926f722e883195);
+            
+    
+            var marker_a571c94f272da34bf2a459a70dee707c = L.marker(
+                [24.995638, 121.42796],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_ef32a144df0ebbf22f696dbf13eb04a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_68ee621ce8d3b107b247114764a2e47f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48cabb3712788102f9d716921a015b48 = $(`<div id="html_48cabb3712788102f9d716921a015b48" style="width: 100.0%; height: 100.0%;"><b>樹林藝文綜合行政大樓</b><br>預估時間: 未知</div>`)[0];
+                popup_68ee621ce8d3b107b247114764a2e47f.setContent(html_48cabb3712788102f9d716921a015b48);
+            
+        
+
+        marker_a571c94f272da34bf2a459a70dee707c.bindPopup(popup_68ee621ce8d3b107b247114764a2e47f)
+        ;
+
+        
+    
+    
+                marker_a571c94f272da34bf2a459a70dee707c.setIcon(icon_ef32a144df0ebbf22f696dbf13eb04a8);
+            
+    
+            var marker_28bf5caade0caef3166b824b63aa6e7f = L.marker(
+                [24.998244, 121.430021],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_005a15e7116f8d52566ac07bf577c380 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9f713ea64e927bee4e4cd6ece04093a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ca2f6490916dcaf9e1b29258c5912934 = $(`<div id="html_ca2f6490916dcaf9e1b29258c5912934" style="width: 100.0%; height: 100.0%;"><b>十三公</b><br>預估時間: 未知</div>`)[0];
+                popup_c9f713ea64e927bee4e4cd6ece04093a.setContent(html_ca2f6490916dcaf9e1b29258c5912934);
+            
+        
+
+        marker_28bf5caade0caef3166b824b63aa6e7f.bindPopup(popup_c9f713ea64e927bee4e4cd6ece04093a)
+        ;
+
+        
+    
+    
+                marker_28bf5caade0caef3166b824b63aa6e7f.setIcon(icon_005a15e7116f8d52566ac07bf577c380);
+            
+    
+            var marker_581195a25e7b4b28dbde80ff20998d49 = L.marker(
+                [25.000554, 121.431245],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_a5e8fa6c3b89b394610ecb393661d8ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48c34ef30656e3715cc7b7dc3f7fff91 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5aece412c6df9fb7cda2752c93a04ffd = $(`<div id="html_5aece412c6df9fb7cda2752c93a04ffd" style="width: 100.0%; height: 100.0%;"><b>圳福里</b><br>預估時間: 未知</div>`)[0];
+                popup_48c34ef30656e3715cc7b7dc3f7fff91.setContent(html_5aece412c6df9fb7cda2752c93a04ffd);
+            
+        
+
+        marker_581195a25e7b4b28dbde80ff20998d49.bindPopup(popup_48c34ef30656e3715cc7b7dc3f7fff91)
+        ;
+
+        
+    
+    
+                marker_581195a25e7b4b28dbde80ff20998d49.setIcon(icon_a5e8fa6c3b89b394610ecb393661d8ef);
+            
+    
+            var marker_97afed61fca752443e51e2ca465ececb = L.marker(
+                [25.002077, 121.432111],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_6d9ac2ea8a87dd5a35ead1316623b0f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cea25804ccd56428a28fee0840f5e6cf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae146bfc5d50fdd4b22e994c62b2a554 = $(`<div id="html_ae146bfc5d50fdd4b22e994c62b2a554" style="width: 100.0%; height: 100.0%;"><b>許厝</b><br>預估時間: 未知</div>`)[0];
+                popup_cea25804ccd56428a28fee0840f5e6cf.setContent(html_ae146bfc5d50fdd4b22e994c62b2a554);
+            
+        
+
+        marker_97afed61fca752443e51e2ca465ececb.bindPopup(popup_cea25804ccd56428a28fee0840f5e6cf)
+        ;
+
+        
+    
+    
+                marker_97afed61fca752443e51e2ca465ececb.setIcon(icon_6d9ac2ea8a87dd5a35ead1316623b0f9);
+            
+    
+            var marker_1d25059c3298d537ec5e83e0ce5354a0 = L.marker(
+                [25.007867, 121.431869],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_8dc6941d2a7a6db7b4a2f218265c976c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8227599903c08eb4049af381f4c3691 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dec476a1f6bae32d48ba1ffb229309f5 = $(`<div id="html_dec476a1f6bae32d48ba1ffb229309f5" style="width: 100.0%; height: 100.0%;"><b>大唐江山</b><br>預估時間: 未知</div>`)[0];
+                popup_a8227599903c08eb4049af381f4c3691.setContent(html_dec476a1f6bae32d48ba1ffb229309f5);
+            
+        
+
+        marker_1d25059c3298d537ec5e83e0ce5354a0.bindPopup(popup_a8227599903c08eb4049af381f4c3691)
+        ;
+
+        
+    
+    
+                marker_1d25059c3298d537ec5e83e0ce5354a0.setIcon(icon_8dc6941d2a7a6db7b4a2f218265c976c);
+            
+    
+            var marker_28cddd541fe5eab5bd705f6258671c78 = L.marker(
+                [25.009369, 121.4299139],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_5da00bf2ce87352dee3d7969e98eb38a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8a225d424352a5bdc81edd83680035f7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3426dce534a75e11feeac2039a845ca4 = $(`<div id="html_3426dce534a75e11feeac2039a845ca4" style="width: 100.0%; height: 100.0%;"><b>民安西路403巷口</b><br>預估時間: 未知</div>`)[0];
+                popup_8a225d424352a5bdc81edd83680035f7.setContent(html_3426dce534a75e11feeac2039a845ca4);
+            
+        
+
+        marker_28cddd541fe5eab5bd705f6258671c78.bindPopup(popup_8a225d424352a5bdc81edd83680035f7)
+        ;
+
+        
+    
+    
+                marker_28cddd541fe5eab5bd705f6258671c78.setIcon(icon_5da00bf2ce87352dee3d7969e98eb38a);
+            
+    
+            var marker_21112d18f06e94c0d2f4db974d133f75 = L.marker(
+                [25.010565, 121.4284024],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_5ca4f27ab69d9fab7005f0550b130a05 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02ff3f8515662831dec4f06dbde64a44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_194c9f087bf1e01ce3782a04e6529c1e = $(`<div id="html_194c9f087bf1e01ce3782a04e6529c1e" style="width: 100.0%; height: 100.0%;"><b>光華街口</b><br>預估時間: 未知</div>`)[0];
+                popup_02ff3f8515662831dec4f06dbde64a44.setContent(html_194c9f087bf1e01ce3782a04e6529c1e);
+            
+        
+
+        marker_21112d18f06e94c0d2f4db974d133f75.bindPopup(popup_02ff3f8515662831dec4f06dbde64a44)
+        ;
+
+        
+    
+    
+                marker_21112d18f06e94c0d2f4db974d133f75.setIcon(icon_5ca4f27ab69d9fab7005f0550b130a05);
+            
+    
+            var marker_93d108cf39fb41be1788917c46a035f5 = L.marker(
+                [25.012548, 121.4263087],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_c4b6daea6d99ed7d48ecfc96c19ec6db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_933c76bcde8c290f2b15ffff55f69e8b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4053cdac4bb781d4c71eec0f95d5bb3a = $(`<div id="html_4053cdac4bb781d4c71eec0f95d5bb3a" style="width: 100.0%; height: 100.0%;"><b>新寶社區</b><br>預估時間: 未知</div>`)[0];
+                popup_933c76bcde8c290f2b15ffff55f69e8b.setContent(html_4053cdac4bb781d4c71eec0f95d5bb3a);
+            
+        
+
+        marker_93d108cf39fb41be1788917c46a035f5.bindPopup(popup_933c76bcde8c290f2b15ffff55f69e8b)
+        ;
+
+        
+    
+    
+                marker_93d108cf39fb41be1788917c46a035f5.setIcon(icon_c4b6daea6d99ed7d48ecfc96c19ec6db);
+            
+    
+            var marker_e71449be447b41eb4591de83bebf654d = L.marker(
+                [25.014531, 121.4260504],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_b44c41437e1c37c694d3c71620a26117 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_763448a9598262dcaa454dd87cdc2932 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9b64fad3a839dcd34258cd719dfdac6 = $(`<div id="html_e9b64fad3a839dcd34258cd719dfdac6" style="width: 100.0%; height: 100.0%;"><b>光明里</b><br>預估時間: 未知</div>`)[0];
+                popup_763448a9598262dcaa454dd87cdc2932.setContent(html_e9b64fad3a839dcd34258cd719dfdac6);
+            
+        
+
+        marker_e71449be447b41eb4591de83bebf654d.bindPopup(popup_763448a9598262dcaa454dd87cdc2932)
+        ;
+
+        
+    
+    
+                marker_e71449be447b41eb4591de83bebf654d.setIcon(icon_b44c41437e1c37c694d3c71620a26117);
+            
+    
+            var marker_d67058fa694acb03b3eea948c3ba9476 = L.marker(
+                [25.016748, 121.426301],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_7ad2e68fe5c2ab1254db9cf188910912 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e435156b70995b52cf3df5db0d5f2dcb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94df84df9125155220e3e6d6c188d070 = $(`<div id="html_94df84df9125155220e3e6d6c188d070" style="width: 100.0%; height: 100.0%;"><b>光華國小(民安西路)</b><br>預估時間: 未知</div>`)[0];
+                popup_e435156b70995b52cf3df5db0d5f2dcb.setContent(html_94df84df9125155220e3e6d6c188d070);
+            
+        
+
+        marker_d67058fa694acb03b3eea948c3ba9476.bindPopup(popup_e435156b70995b52cf3df5db0d5f2dcb)
+        ;
+
+        
+    
+    
+                marker_d67058fa694acb03b3eea948c3ba9476.setIcon(icon_7ad2e68fe5c2ab1254db9cf188910912);
+            
+    
+            var marker_ee2353922cff910d25dece84f055ea6d = L.marker(
+                [25.018631, 121.426917],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_ef848b8b9a32aeb1dc90c0d959646089 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c2904d10501e21708a309199b0416f6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bb13dce0e797d8ea97a109d2cdedab87 = $(`<div id="html_bb13dce0e797d8ea97a109d2cdedab87" style="width: 100.0%; height: 100.0%;"><b>福祿新城一</b><br>預估時間: 未知</div>`)[0];
+                popup_c2904d10501e21708a309199b0416f6f.setContent(html_bb13dce0e797d8ea97a109d2cdedab87);
+            
+        
+
+        marker_ee2353922cff910d25dece84f055ea6d.bindPopup(popup_c2904d10501e21708a309199b0416f6f)
+        ;
+
+        
+    
+    
+                marker_ee2353922cff910d25dece84f055ea6d.setIcon(icon_ef848b8b9a32aeb1dc90c0d959646089);
+            
+    
+            var marker_3156c03b232554e171a5e67d71d46a21 = L.marker(
+                [25.02033, 121.427412],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_3b263f67b7494b169b9e2029d76fbf2b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0dad6667677fbef54f4385ef10fb048c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ccb34ecb868136a89c83d24cb53df0f4 = $(`<div id="html_ccb34ecb868136a89c83d24cb53df0f4" style="width: 100.0%; height: 100.0%;"><b>福祿新城二</b><br>預估時間: 未知</div>`)[0];
+                popup_0dad6667677fbef54f4385ef10fb048c.setContent(html_ccb34ecb868136a89c83d24cb53df0f4);
+            
+        
+
+        marker_3156c03b232554e171a5e67d71d46a21.bindPopup(popup_0dad6667677fbef54f4385ef10fb048c)
+        ;
+
+        
+    
+    
+                marker_3156c03b232554e171a5e67d71d46a21.setIcon(icon_3b263f67b7494b169b9e2029d76fbf2b);
+            
+    
+            var marker_77873b87e5756b7f4a249a51bc812665 = L.marker(
+                [25.020925, 121.427927],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_96fb748aca5e9ff832a3817ac9c0c3d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8bd7d93e545684d0b2a5e7c7c9bdb5af = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_573c2cf725e343a28e79278177b30c7a = $(`<div id="html_573c2cf725e343a28e79278177b30c7a" style="width: 100.0%; height: 100.0%;"><b>民安國小</b><br>預估時間: 未知</div>`)[0];
+                popup_8bd7d93e545684d0b2a5e7c7c9bdb5af.setContent(html_573c2cf725e343a28e79278177b30c7a);
+            
+        
+
+        marker_77873b87e5756b7f4a249a51bc812665.bindPopup(popup_8bd7d93e545684d0b2a5e7c7c9bdb5af)
+        ;
+
+        
+    
+    
+                marker_77873b87e5756b7f4a249a51bc812665.setIcon(icon_96fb748aca5e9ff832a3817ac9c0c3d6);
+            
+    
+            var marker_8c1b9d7bec16e072e83842309d9fc31d = L.marker(
+                [25.020634, 121.430343],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_af8f20f7aac66a695ab068e32d7e0bde = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f9085a6c6c980ad6bfd48aeb5f5ad47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8042b5921be783f68bc46c41390e3321 = $(`<div id="html_8042b5921be783f68bc46c41390e3321" style="width: 100.0%; height: 100.0%;"><b>民安站</b><br>預估時間: 未知</div>`)[0];
+                popup_8f9085a6c6c980ad6bfd48aeb5f5ad47.setContent(html_8042b5921be783f68bc46c41390e3321);
+            
+        
+
+        marker_8c1b9d7bec16e072e83842309d9fc31d.bindPopup(popup_8f9085a6c6c980ad6bfd48aeb5f5ad47)
+        ;
+
+        
+    
+    
+                marker_8c1b9d7bec16e072e83842309d9fc31d.setIcon(icon_af8f20f7aac66a695ab068e32d7e0bde);
+            
+    
+            var marker_e0cb6e72f7062b959609f5efab5596a1 = L.marker(
+                [25.02035, 121.433273],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_358556b26270dcdf0ad70e698248cb0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8e5dca301da991f2e2c41094747cc74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_015456f250c2d96e2e807b143376d076 = $(`<div id="html_015456f250c2d96e2e807b143376d076" style="width: 100.0%; height: 100.0%;"><b>勞工活動中心</b><br>預估時間: 未知</div>`)[0];
+                popup_d8e5dca301da991f2e2c41094747cc74.setContent(html_015456f250c2d96e2e807b143376d076);
+            
+        
+
+        marker_e0cb6e72f7062b959609f5efab5596a1.bindPopup(popup_d8e5dca301da991f2e2c41094747cc74)
+        ;
+
+        
+    
+    
+                marker_e0cb6e72f7062b959609f5efab5596a1.setIcon(icon_358556b26270dcdf0ad70e698248cb0c);
+            
+    
+            var marker_fff45579f3e7e2d74d35a8f75f5bed84 = L.marker(
+                [25.021865, 121.4348185],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_8bd52e4e0eb1164e9bd335b1c1b402a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d52b8939226692120fa12b79cf74140 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46959e23d83e96ec6352555c92a00395 = $(`<div id="html_46959e23d83e96ec6352555c92a00395" style="width: 100.0%; height: 100.0%;"><b>新樹民安路口(新泰醫院)</b><br>預估時間: 未知</div>`)[0];
+                popup_9d52b8939226692120fa12b79cf74140.setContent(html_46959e23d83e96ec6352555c92a00395);
+            
+        
+
+        marker_fff45579f3e7e2d74d35a8f75f5bed84.bindPopup(popup_9d52b8939226692120fa12b79cf74140)
+        ;
+
+        
+    
+    
+                marker_fff45579f3e7e2d74d35a8f75f5bed84.setIcon(icon_8bd52e4e0eb1164e9bd335b1c1b402a0);
+            
+    
+            var marker_02f4337c2fbc2928a16c5771c14c0521 = L.marker(
+                [25.026907, 121.437541],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_a963bdcc61403f8683454d1eca7da690 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cc062fc2dbfa5f474c80e6a959aa57c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_27d51ac32da465cf831bda0527e448e1 = $(`<div id="html_27d51ac32da465cf831bda0527e448e1" style="width: 100.0%; height: 100.0%;"><b>北華</b><br>預估時間: 未知</div>`)[0];
+                popup_7cc062fc2dbfa5f474c80e6a959aa57c.setContent(html_27d51ac32da465cf831bda0527e448e1);
+            
+        
+
+        marker_02f4337c2fbc2928a16c5771c14c0521.bindPopup(popup_7cc062fc2dbfa5f474c80e6a959aa57c)
+        ;
+
+        
+    
+    
+                marker_02f4337c2fbc2928a16c5771c14c0521.setIcon(icon_a963bdcc61403f8683454d1eca7da690);
+            
+    
+            var marker_47d6748d8eb7314545a58c54dc815f96 = L.marker(
+                [25.029512, 121.4386329],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_121829b017419486a99123abc83e3c0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c889ef8e944ce40e230e26f8220f4201 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_90bb2f9f1927c1f4a91624a24966c664 = $(`<div id="html_90bb2f9f1927c1f4a91624a24966c664" style="width: 100.0%; height: 100.0%;"><b>石龜</b><br>預估時間: 未知</div>`)[0];
+                popup_c889ef8e944ce40e230e26f8220f4201.setContent(html_90bb2f9f1927c1f4a91624a24966c664);
+            
+        
+
+        marker_47d6748d8eb7314545a58c54dc815f96.bindPopup(popup_c889ef8e944ce40e230e26f8220f4201)
+        ;
+
+        
+    
+    
+                marker_47d6748d8eb7314545a58c54dc815f96.setIcon(icon_121829b017419486a99123abc83e3c0c);
+            
+    
+            var marker_2d43f3aad6f3e785bcbbaa235e61e22b = L.marker(
+                [25.032954, 121.4408296],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_033acc8ccadd31843ff94ab01425a8f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2f4d503346dc9b9be70a55e49d7e2fd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3beba051758522508ae8f18da46bb21 = $(`<div id="html_a3beba051758522508ae8f18da46bb21" style="width: 100.0%; height: 100.0%;"><b>新樹路口</b><br>預估時間: 未知</div>`)[0];
+                popup_a2f4d503346dc9b9be70a55e49d7e2fd.setContent(html_a3beba051758522508ae8f18da46bb21);
+            
+        
+
+        marker_2d43f3aad6f3e785bcbbaa235e61e22b.bindPopup(popup_a2f4d503346dc9b9be70a55e49d7e2fd)
+        ;
+
+        
+    
+    
+                marker_2d43f3aad6f3e785bcbbaa235e61e22b.setIcon(icon_033acc8ccadd31843ff94ab01425a8f7);
+            
+    
+            var marker_dcbaaf39f5ae9d9b743d9143115996de = L.marker(
+                [25.0337, 121.4406316],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_a81eebd976581e05d0fa7f686a834d95 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_046a943d3e74bfcc7b1a42bafb033d2e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ec5f536ac85da4038e87c54e2264e7e7 = $(`<div id="html_ec5f536ac85da4038e87c54e2264e7e7" style="width: 100.0%; height: 100.0%;"><b>盲人重建院</b><br>預估時間: 未知</div>`)[0];
+                popup_046a943d3e74bfcc7b1a42bafb033d2e.setContent(html_ec5f536ac85da4038e87c54e2264e7e7);
+            
+        
+
+        marker_dcbaaf39f5ae9d9b743d9143115996de.bindPopup(popup_046a943d3e74bfcc7b1a42bafb033d2e)
+        ;
+
+        
+    
+    
+                marker_dcbaaf39f5ae9d9b743d9143115996de.setIcon(icon_a81eebd976581e05d0fa7f686a834d95);
+            
+    
+            var marker_5cbba024526db8034c90ab866b04e6e3 = L.marker(
+                [25.032897, 121.4359666],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_2b99758b887c2a56eb7b74f1bdbd7caf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99324b6add83f0159fefba2236c213d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b63a05209b1c0ee3b0dacc59cd7ef2a4 = $(`<div id="html_b63a05209b1c0ee3b0dacc59cd7ef2a4" style="width: 100.0%; height: 100.0%;"><b>捷運輔大站</b><br>預估時間: 未知</div>`)[0];
+                popup_99324b6add83f0159fefba2236c213d7.setContent(html_b63a05209b1c0ee3b0dacc59cd7ef2a4);
+            
+        
+
+        marker_5cbba024526db8034c90ab866b04e6e3.bindPopup(popup_99324b6add83f0159fefba2236c213d7)
+        ;
+
+        
+    
+    
+                marker_5cbba024526db8034c90ab866b04e6e3.setIcon(icon_2b99758b887c2a56eb7b74f1bdbd7caf);
+            
+    
+            var marker_644f1930f10b45ab3bf361f50772c373 = L.marker(
+                [25.031472, 121.43385],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_baa48588dc8b95b0afa2e628861d4a0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_382e0d8f353cce60ef67f864409a761a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5f3de7329b3abbe9d627b109d3f97789 = $(`<div id="html_5f3de7329b3abbe9d627b109d3f97789" style="width: 100.0%; height: 100.0%;"><b>捷運輔大站(建國一路)</b><br>預估時間: 未知</div>`)[0];
+                popup_382e0d8f353cce60ef67f864409a761a.setContent(html_5f3de7329b3abbe9d627b109d3f97789);
+            
+        
+
+        marker_644f1930f10b45ab3bf361f50772c373.bindPopup(popup_382e0d8f353cce60ef67f864409a761a)
+        ;
+
+        
+    
+    
+                marker_644f1930f10b45ab3bf361f50772c373.setIcon(icon_baa48588dc8b95b0afa2e628861d4a0d);
+            
+    
+            var marker_e810506e20cdb632386521027d9163aa = L.marker(
+                [25.029839, 121.4345539],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_233ba4e80a6f29c4efc966d13d25fe68 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e640a5bb2cea7e7f27a5da074e674e7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8ba49d301cecd5dd15b62bfc363ae30d = $(`<div id="html_8ba49d301cecd5dd15b62bfc363ae30d" style="width: 100.0%; height: 100.0%;"><b>建國一路</b><br>預估時間: 未知</div>`)[0];
+                popup_7e640a5bb2cea7e7f27a5da074e674e7.setContent(html_8ba49d301cecd5dd15b62bfc363ae30d);
+            
+        
+
+        marker_e810506e20cdb632386521027d9163aa.bindPopup(popup_7e640a5bb2cea7e7f27a5da074e674e7)
+        ;
+
+        
+    
+    
+                marker_e810506e20cdb632386521027d9163aa.setIcon(icon_233ba4e80a6f29c4efc966d13d25fe68);
+            
+    
+            var marker_e73bb828fdc3fc4a27cb700a54c92d7f = L.marker(
+                [25.027194, 121.43477],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_a9c880b5dab1af01c3f1408324ad6469 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aae05211f2eedca5e3ac490c88aeb98e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a662ad1bfaaaee164a29435f0666eedd = $(`<div id="html_a662ad1bfaaaee164a29435f0666eedd" style="width: 100.0%; height: 100.0%;"><b>建國後港路口</b><br>預估時間: 未知</div>`)[0];
+                popup_aae05211f2eedca5e3ac490c88aeb98e.setContent(html_a662ad1bfaaaee164a29435f0666eedd);
+            
+        
+
+        marker_e73bb828fdc3fc4a27cb700a54c92d7f.bindPopup(popup_aae05211f2eedca5e3ac490c88aeb98e)
+        ;
+
+        
+    
+    
+                marker_e73bb828fdc3fc4a27cb700a54c92d7f.setIcon(icon_a9c880b5dab1af01c3f1408324ad6469);
+            
+    
+            var marker_a1bca4575b7673939c6b3afb0df32831 = L.marker(
+                [25.024483, 121.434908],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_43dfccd27e880b499b13f4c246ced8f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0751d4e80c252a7e764e0b6b3c4af5f8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3008ac7e22823b26b571a519dd123071 = $(`<div id="html_3008ac7e22823b26b571a519dd123071" style="width: 100.0%; height: 100.0%;"><b>建國二路口</b><br>預估時間: 未知</div>`)[0];
+                popup_0751d4e80c252a7e764e0b6b3c4af5f8.setContent(html_3008ac7e22823b26b571a519dd123071);
+            
+        
+
+        marker_a1bca4575b7673939c6b3afb0df32831.bindPopup(popup_0751d4e80c252a7e764e0b6b3c4af5f8)
+        ;
+
+        
+    
+    
+                marker_a1bca4575b7673939c6b3afb0df32831.setIcon(icon_43dfccd27e880b499b13f4c246ced8f3);
+            
+    
+            var marker_7937d5d9496e7eca0742514d51c868d6 = L.marker(
+                [25.021698, 121.4345132],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_52a13c03e4455e7549c4790b1eb29eba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eb8a4fe6a5144a1010ce87e8c321b47c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53219def4e0a857e18c1fe580d00ba00 = $(`<div id="html_53219def4e0a857e18c1fe580d00ba00" style="width: 100.0%; height: 100.0%;"><b>新樹民安路口(新泰醫院)</b><br>預估時間: 未知</div>`)[0];
+                popup_eb8a4fe6a5144a1010ce87e8c321b47c.setContent(html_53219def4e0a857e18c1fe580d00ba00);
+            
+        
+
+        marker_7937d5d9496e7eca0742514d51c868d6.bindPopup(popup_eb8a4fe6a5144a1010ce87e8c321b47c)
+        ;
+
+        
+    
+    
+                marker_7937d5d9496e7eca0742514d51c868d6.setIcon(icon_52a13c03e4455e7549c4790b1eb29eba);
+            
+    
+            var marker_3c3c7eddb31c2812b61522377da43d9b = L.marker(
+                [25.020492, 121.4331789],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_39b55d76bad3ed57c0c29b7b1045dc3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9d91aac4866ff69a047bb09cb6f8f61 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd60ac4b7958644602e5fb0f9f99ff09 = $(`<div id="html_dd60ac4b7958644602e5fb0f9f99ff09" style="width: 100.0%; height: 100.0%;"><b>勞工活動中心</b><br>預估時間: 未知</div>`)[0];
+                popup_a9d91aac4866ff69a047bb09cb6f8f61.setContent(html_dd60ac4b7958644602e5fb0f9f99ff09);
+            
+        
+
+        marker_3c3c7eddb31c2812b61522377da43d9b.bindPopup(popup_a9d91aac4866ff69a047bb09cb6f8f61)
+        ;
+
+        
+    
+    
+                marker_3c3c7eddb31c2812b61522377da43d9b.setIcon(icon_39b55d76bad3ed57c0c29b7b1045dc3b);
+            
+    
+            var marker_76a7030142e0611379412ef2a490e56b = L.marker(
+                [25.020838, 121.4302215],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_653c6e6af360776326e932e9c8b17b12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a251e8f4a5e8eafeaf8085e790d56b12 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b8c5262f81678c0bfd095767bef1d8d4 = $(`<div id="html_b8c5262f81678c0bfd095767bef1d8d4" style="width: 100.0%; height: 100.0%;"><b>民安站</b><br>預估時間: 未知</div>`)[0];
+                popup_a251e8f4a5e8eafeaf8085e790d56b12.setContent(html_b8c5262f81678c0bfd095767bef1d8d4);
+            
+        
+
+        marker_76a7030142e0611379412ef2a490e56b.bindPopup(popup_a251e8f4a5e8eafeaf8085e790d56b12)
+        ;
+
+        
+    
+    
+                marker_76a7030142e0611379412ef2a490e56b.setIcon(icon_653c6e6af360776326e932e9c8b17b12);
+            
+    
+            var marker_9f74d6ef3aab5dc327d9cd7b1856e631 = L.marker(
+                [25.021046, 121.4278873],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_54e66fafa28ff23f077c2ff3253959f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_974b11548590f0926d1f29c5e7b8e35a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8f79905b0d3217bd11c97e5ac27f43fc = $(`<div id="html_8f79905b0d3217bd11c97e5ac27f43fc" style="width: 100.0%; height: 100.0%;"><b>民安國小</b><br>預估時間: 未知</div>`)[0];
+                popup_974b11548590f0926d1f29c5e7b8e35a.setContent(html_8f79905b0d3217bd11c97e5ac27f43fc);
+            
+        
+
+        marker_9f74d6ef3aab5dc327d9cd7b1856e631.bindPopup(popup_974b11548590f0926d1f29c5e7b8e35a)
+        ;
+
+        
+    
+    
+                marker_9f74d6ef3aab5dc327d9cd7b1856e631.setIcon(icon_54e66fafa28ff23f077c2ff3253959f2);
+            
+    
+            var marker_37c0c018d44ce6c4d516962306339052 = L.marker(
+                [25.020456, 121.4272815],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_7ca581d78786737ee81a7642415dcf54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15ff2a9bfe0970b7fd33cb2540791acf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3f78dd4584cd13d6a60f6a2bc1dc7397 = $(`<div id="html_3f78dd4584cd13d6a60f6a2bc1dc7397" style="width: 100.0%; height: 100.0%;"><b>福祿新城二</b><br>預估時間: 未知</div>`)[0];
+                popup_15ff2a9bfe0970b7fd33cb2540791acf.setContent(html_3f78dd4584cd13d6a60f6a2bc1dc7397);
+            
+        
+
+        marker_37c0c018d44ce6c4d516962306339052.bindPopup(popup_15ff2a9bfe0970b7fd33cb2540791acf)
+        ;
+
+        
+    
+    
+                marker_37c0c018d44ce6c4d516962306339052.setIcon(icon_7ca581d78786737ee81a7642415dcf54);
+            
+    
+            var marker_73a00abc5bbc48b9b8dfba8bbbd56fe7 = L.marker(
+                [25.018738, 121.4268159],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_765f8a4f2f3bb19c07c24bf6b5aef152 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cb46d6c7f5c3bfa84cf727cd3ad67b36 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60f207156366623d4df00ecef9f02118 = $(`<div id="html_60f207156366623d4df00ecef9f02118" style="width: 100.0%; height: 100.0%;"><b>福祿新城一</b><br>預估時間: 未知</div>`)[0];
+                popup_cb46d6c7f5c3bfa84cf727cd3ad67b36.setContent(html_60f207156366623d4df00ecef9f02118);
+            
+        
+
+        marker_73a00abc5bbc48b9b8dfba8bbbd56fe7.bindPopup(popup_cb46d6c7f5c3bfa84cf727cd3ad67b36)
+        ;
+
+        
+    
+    
+                marker_73a00abc5bbc48b9b8dfba8bbbd56fe7.setIcon(icon_765f8a4f2f3bb19c07c24bf6b5aef152);
+            
+    
+            var marker_f7d5f0d7e635d741be8952769250dc99 = L.marker(
+                [25.01724, 121.42625],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_7beb3f973a4905bcb460d464c02fbb02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4fbd8574bfeaa2c4ffe2cd5d7fcefc83 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_501b8d6aeb18320f14a163d4dccdab3a = $(`<div id="html_501b8d6aeb18320f14a163d4dccdab3a" style="width: 100.0%; height: 100.0%;"><b>光華國小(民安西路)</b><br>預估時間: 未知</div>`)[0];
+                popup_4fbd8574bfeaa2c4ffe2cd5d7fcefc83.setContent(html_501b8d6aeb18320f14a163d4dccdab3a);
+            
+        
+
+        marker_f7d5f0d7e635d741be8952769250dc99.bindPopup(popup_4fbd8574bfeaa2c4ffe2cd5d7fcefc83)
+        ;
+
+        
+    
+    
+                marker_f7d5f0d7e635d741be8952769250dc99.setIcon(icon_7beb3f973a4905bcb460d464c02fbb02);
+            
+    
+            var marker_aba0327b3436ac8b1a4acb78489fc031 = L.marker(
+                [25.01439, 121.4258116],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_fe22bac698010fdee6dfe826845666ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_696e729bcbdc7193cb9c8b9086f2d341 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_77551e66942492b03facd4ed3f586bdf = $(`<div id="html_77551e66942492b03facd4ed3f586bdf" style="width: 100.0%; height: 100.0%;"><b>光明里</b><br>預估時間: 未知</div>`)[0];
+                popup_696e729bcbdc7193cb9c8b9086f2d341.setContent(html_77551e66942492b03facd4ed3f586bdf);
+            
+        
+
+        marker_aba0327b3436ac8b1a4acb78489fc031.bindPopup(popup_696e729bcbdc7193cb9c8b9086f2d341)
+        ;
+
+        
+    
+    
+                marker_aba0327b3436ac8b1a4acb78489fc031.setIcon(icon_fe22bac698010fdee6dfe826845666ab);
+            
+    
+            var marker_081f4d3eabd19b7a69066425a6768270 = L.marker(
+                [25.012681, 121.4260776],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_cf5697aa1a405ac85958883128671cbc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3ea2e9a0feee00fb1b5896c56d3e030d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_081361353ebdc65f039719870d08017e = $(`<div id="html_081361353ebdc65f039719870d08017e" style="width: 100.0%; height: 100.0%;"><b>新寶社區</b><br>預估時間: 未知</div>`)[0];
+                popup_3ea2e9a0feee00fb1b5896c56d3e030d.setContent(html_081361353ebdc65f039719870d08017e);
+            
+        
+
+        marker_081f4d3eabd19b7a69066425a6768270.bindPopup(popup_3ea2e9a0feee00fb1b5896c56d3e030d)
+        ;
+
+        
+    
+    
+                marker_081f4d3eabd19b7a69066425a6768270.setIcon(icon_cf5697aa1a405ac85958883128671cbc);
+            
+    
+            var marker_5d8bf50d89313b7ed097e8aa7bd46363 = L.marker(
+                [25.010583, 121.428101],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_40173768d6166b71167aaba3c8c16aec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_56a60992f125d364b1793cb00616956f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0afd0acb939c31d4a34f046a2e7443c4 = $(`<div id="html_0afd0acb939c31d4a34f046a2e7443c4" style="width: 100.0%; height: 100.0%;"><b>光華街口</b><br>預估時間: 未知</div>`)[0];
+                popup_56a60992f125d364b1793cb00616956f.setContent(html_0afd0acb939c31d4a34f046a2e7443c4);
+            
+        
+
+        marker_5d8bf50d89313b7ed097e8aa7bd46363.bindPopup(popup_56a60992f125d364b1793cb00616956f)
+        ;
+
+        
+    
+    
+                marker_5d8bf50d89313b7ed097e8aa7bd46363.setIcon(icon_40173768d6166b71167aaba3c8c16aec);
+            
+    
+            var marker_5b416aab0dfdb717bc54f3d903a51453 = L.marker(
+                [25.009224, 121.429871],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_ea4250655f97c031546cbd1728e77a3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0687e17e256f63f8ae36b3f442412d6f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_48ed8625f6520cae42fc80cb417e9718 = $(`<div id="html_48ed8625f6520cae42fc80cb417e9718" style="width: 100.0%; height: 100.0%;"><b>民安西路403巷口</b><br>預估時間: 未知</div>`)[0];
+                popup_0687e17e256f63f8ae36b3f442412d6f.setContent(html_48ed8625f6520cae42fc80cb417e9718);
+            
+        
+
+        marker_5b416aab0dfdb717bc54f3d903a51453.bindPopup(popup_0687e17e256f63f8ae36b3f442412d6f)
+        ;
+
+        
+    
+    
+                marker_5b416aab0dfdb717bc54f3d903a51453.setIcon(icon_ea4250655f97c031546cbd1728e77a3b);
+            
+    
+            var marker_52ef4545f3acca33370732706206fe77 = L.marker(
+                [25.007896, 121.431591],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_f8edd3674033c04540bf7eba331ae5c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55297b41b9cba1bba2c675fb393141e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bab11367229953317572e8cf6ed99487 = $(`<div id="html_bab11367229953317572e8cf6ed99487" style="width: 100.0%; height: 100.0%;"><b>大唐江山</b><br>預估時間: 未知</div>`)[0];
+                popup_55297b41b9cba1bba2c675fb393141e5.setContent(html_bab11367229953317572e8cf6ed99487);
+            
+        
+
+        marker_52ef4545f3acca33370732706206fe77.bindPopup(popup_55297b41b9cba1bba2c675fb393141e5)
+        ;
+
+        
+    
+    
+                marker_52ef4545f3acca33370732706206fe77.setIcon(icon_f8edd3674033c04540bf7eba331ae5c4);
+            
+    
+            var marker_a35716cca2830a4c39c254f95ca0d71e = L.marker(
+                [25.00196, 121.43183],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_055ce13f9bda2bc770585695ad28b2d8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b6b445111c0ae64962858f26757f0d7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_03de9fddc2b862019e1e19e465cd1d32 = $(`<div id="html_03de9fddc2b862019e1e19e465cd1d32" style="width: 100.0%; height: 100.0%;"><b>許厝</b><br>預估時間: 未知</div>`)[0];
+                popup_7b6b445111c0ae64962858f26757f0d7.setContent(html_03de9fddc2b862019e1e19e465cd1d32);
+            
+        
+
+        marker_a35716cca2830a4c39c254f95ca0d71e.bindPopup(popup_7b6b445111c0ae64962858f26757f0d7)
+        ;
+
+        
+    
+    
+                marker_a35716cca2830a4c39c254f95ca0d71e.setIcon(icon_055ce13f9bda2bc770585695ad28b2d8);
+            
+    
+            var marker_3d6b5661d69ecc813f2bc02756d3aa10 = L.marker(
+                [25.000126, 121.43087],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_7dc01e496a1fa45c67adc3d937628e7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b7e0027241f58bd1b22abd1505b1605b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e52b6cf2adedcea6aeca5f8c49d42a93 = $(`<div id="html_e52b6cf2adedcea6aeca5f8c49d42a93" style="width: 100.0%; height: 100.0%;"><b>圳福里</b><br>預估時間: 未知</div>`)[0];
+                popup_b7e0027241f58bd1b22abd1505b1605b.setContent(html_e52b6cf2adedcea6aeca5f8c49d42a93);
+            
+        
+
+        marker_3d6b5661d69ecc813f2bc02756d3aa10.bindPopup(popup_b7e0027241f58bd1b22abd1505b1605b)
+        ;
+
+        
+    
+    
+                marker_3d6b5661d69ecc813f2bc02756d3aa10.setIcon(icon_7dc01e496a1fa45c67adc3d937628e7b);
+            
+    
+            var marker_1df353913319c4559b74bef4c93d65c3 = L.marker(
+                [24.998348, 121.429919],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_691f8642e7bf19236b9dcbf27ae6ee45 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2b94abe635c4c561a05fc5e5bf8c482 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_727db74184aa54b240bcc6e67a24f784 = $(`<div id="html_727db74184aa54b240bcc6e67a24f784" style="width: 100.0%; height: 100.0%;"><b>十三公</b><br>預估時間: 未知</div>`)[0];
+                popup_a2b94abe635c4c561a05fc5e5bf8c482.setContent(html_727db74184aa54b240bcc6e67a24f784);
+            
+        
+
+        marker_1df353913319c4559b74bef4c93d65c3.bindPopup(popup_a2b94abe635c4c561a05fc5e5bf8c482)
+        ;
+
+        
+    
+    
+                marker_1df353913319c4559b74bef4c93d65c3.setIcon(icon_691f8642e7bf19236b9dcbf27ae6ee45);
+            
+    
+            var marker_ef325a4877a53a7f8793387a540a1bb3 = L.marker(
+                [24.995035, 121.427318],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_da824ebe00fad7164da35196ffbe1d86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70384e844fd65d37df016f668ab73bd8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_028fdc331f54e81570ff2ba91a2fd80b = $(`<div id="html_028fdc331f54e81570ff2ba91a2fd80b" style="width: 100.0%; height: 100.0%;"><b>樹林藝文綜合行政大樓</b><br>預估時間: 未知</div>`)[0];
+                popup_70384e844fd65d37df016f668ab73bd8.setContent(html_028fdc331f54e81570ff2ba91a2fd80b);
+            
+        
+
+        marker_ef325a4877a53a7f8793387a540a1bb3.bindPopup(popup_70384e844fd65d37df016f668ab73bd8)
+        ;
+
+        
+    
+    
+                marker_ef325a4877a53a7f8793387a540a1bb3.setIcon(icon_da824ebe00fad7164da35196ffbe1d86);
+            
+    
+            var marker_e7a6f9ab66b324610cd9b7940708b334 = L.marker(
+                [24.994234, 121.4267324],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_a03ac83a46fe024b1190be71b265728b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9246e71a20d629d87300e43892f4454f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_892d37a4caeb75fb815d2cd80fd60f3d = $(`<div id="html_892d37a4caeb75fb815d2cd80fd60f3d" style="width: 100.0%; height: 100.0%;"><b>濟安宮(樹新路)</b><br>預估時間: 未知</div>`)[0];
+                popup_9246e71a20d629d87300e43892f4454f.setContent(html_892d37a4caeb75fb815d2cd80fd60f3d);
+            
+        
+
+        marker_e7a6f9ab66b324610cd9b7940708b334.bindPopup(popup_9246e71a20d629d87300e43892f4454f)
+        ;
+
+        
+    
+    
+                marker_e7a6f9ab66b324610cd9b7940708b334.setIcon(icon_a03ac83a46fe024b1190be71b265728b);
+            
+    
+            var marker_0ce4bc9437343ff5e4440ed4ec4713fe = L.marker(
+                [24.993255, 121.4243668],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_aea5f2b3e0fb19fb6212efd87e5e65d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce19bb76e9dbf3013705373ee27b5ed0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3cc61639764769401677a325d6adee74 = $(`<div id="html_3cc61639764769401677a325d6adee74" style="width: 100.0%; height: 100.0%;"><b>中山路口</b><br>預估時間: 未知</div>`)[0];
+                popup_ce19bb76e9dbf3013705373ee27b5ed0.setContent(html_3cc61639764769401677a325d6adee74);
+            
+        
+
+        marker_0ce4bc9437343ff5e4440ed4ec4713fe.bindPopup(popup_ce19bb76e9dbf3013705373ee27b5ed0)
+        ;
+
+        
+    
+    
+                marker_0ce4bc9437343ff5e4440ed4ec4713fe.setIcon(icon_aea5f2b3e0fb19fb6212efd87e5e65d7);
+            
+    
+            var marker_71399460c18079238316674d581d7191 = L.marker(
+                [24.991726, 121.423475],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_3a535176f755b33a95dd5e42230f1881 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_38fdd01860f4b2831c567afe22212833 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_70ded2067a8713b22976581d580c0d4f = $(`<div id="html_70ded2067a8713b22976581d580c0d4f" style="width: 100.0%; height: 100.0%;"><b>樹林後火車站</b><br>預估時間: 未知</div>`)[0];
+                popup_38fdd01860f4b2831c567afe22212833.setContent(html_70ded2067a8713b22976581d580c0d4f);
+            
+        
+
+        marker_71399460c18079238316674d581d7191.bindPopup(popup_38fdd01860f4b2831c567afe22212833)
+        ;
+
+        
+    
+    
+                marker_71399460c18079238316674d581d7191.setIcon(icon_3a535176f755b33a95dd5e42230f1881);
+            
+    
+            var marker_d5acef79ecd72cdf3b51d775eda994d4 = L.marker(
+                [24.989548, 121.422148],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_2628ecb54c0070970dc2dd4a769e058c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adac25f698e5c8455e6ab627afe6d513 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e0bfa8c1dd2e75274be9b4c05a7bfb50 = $(`<div id="html_e0bfa8c1dd2e75274be9b4c05a7bfb50" style="width: 100.0%; height: 100.0%;"><b>育英街口(天主堂)</b><br>預估時間: 未知</div>`)[0];
+                popup_adac25f698e5c8455e6ab627afe6d513.setContent(html_e0bfa8c1dd2e75274be9b4c05a7bfb50);
+            
+        
+
+        marker_d5acef79ecd72cdf3b51d775eda994d4.bindPopup(popup_adac25f698e5c8455e6ab627afe6d513)
+        ;
+
+        
+    
+    
+                marker_d5acef79ecd72cdf3b51d775eda994d4.setIcon(icon_2628ecb54c0070970dc2dd4a769e058c);
+            
+    
+            var marker_5065eb4b5863617a05f2f1d6babf8ced = L.marker(
+                [24.987872, 121.421124],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_031759b1f6c2cfaa8fef9aab5b6145f9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5124920121758d499f49b6c1eef9d8dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4b7564367fdfd8cd56a1ebc2dddf4648 = $(`<div id="html_4b7564367fdfd8cd56a1ebc2dddf4648" style="width: 100.0%; height: 100.0%;"><b>樹林仁愛醫院</b><br>預估時間: 未知</div>`)[0];
+                popup_5124920121758d499f49b6c1eef9d8dd.setContent(html_4b7564367fdfd8cd56a1ebc2dddf4648);
+            
+        
+
+        marker_5065eb4b5863617a05f2f1d6babf8ced.bindPopup(popup_5124920121758d499f49b6c1eef9d8dd)
+        ;
+
+        
+    
+    
+                marker_5065eb4b5863617a05f2f1d6babf8ced.setIcon(icon_031759b1f6c2cfaa8fef9aab5b6145f9);
+            
+    
+            var marker_53c04de62d377ba8e9af3a3d59e4b778 = L.marker(
+                [24.985553, 121.418267],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_f65b7c109f2a8d802438a8770e2b0f99 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_028f6eac250112aef9808270ed820ffc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f833a7fca2772dc424420c9e38fef763 = $(`<div id="html_f833a7fca2772dc424420c9e38fef763" style="width: 100.0%; height: 100.0%;"><b>中山備前街口</b><br>預估時間: 未知</div>`)[0];
+                popup_028f6eac250112aef9808270ed820ffc.setContent(html_f833a7fca2772dc424420c9e38fef763);
+            
+        
+
+        marker_53c04de62d377ba8e9af3a3d59e4b778.bindPopup(popup_028f6eac250112aef9808270ed820ffc)
+        ;
+
+        
+    
+    
+                marker_53c04de62d377ba8e9af3a3d59e4b778.setIcon(icon_f65b7c109f2a8d802438a8770e2b0f99);
+            
+    
+            var marker_8acf00edcdb4f5c9800b59575b7fd3ae = L.marker(
+                [24.983992, 121.415139],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_a689112f501d9c3ca157d28beed5dab6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b176435070c399f4f6f7902de278d8d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ee54b461985f2460471a5974ef9bad69 = $(`<div id="html_ee54b461985f2460471a5974ef9bad69" style="width: 100.0%; height: 100.0%;"><b>東昇公園</b><br>預估時間: 未知</div>`)[0];
+                popup_6b176435070c399f4f6f7902de278d8d.setContent(html_ee54b461985f2460471a5974ef9bad69);
+            
+        
+
+        marker_8acf00edcdb4f5c9800b59575b7fd3ae.bindPopup(popup_6b176435070c399f4f6f7902de278d8d)
+        ;
+
+        
+    
+    
+                marker_8acf00edcdb4f5c9800b59575b7fd3ae.setIcon(icon_a689112f501d9c3ca157d28beed5dab6);
+            
+    
+            var marker_3db1df3469a252c0533d13f112a44b2f = L.marker(
+                [24.98298, 121.411946],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_403b295b942f15a904d6d49f513d9df1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_234cbb9204e1eb7142c4d68f30021987 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b3200c3ea4113a988622f63ead25c761 = $(`<div id="html_b3200c3ea4113a988622f63ead25c761" style="width: 100.0%; height: 100.0%;"><b>東昇福德宮</b><br>預估時間: 未知</div>`)[0];
+                popup_234cbb9204e1eb7142c4d68f30021987.setContent(html_b3200c3ea4113a988622f63ead25c761);
+            
+        
+
+        marker_3db1df3469a252c0533d13f112a44b2f.bindPopup(popup_234cbb9204e1eb7142c4d68f30021987)
+        ;
+
+        
+    
+    
+                marker_3db1df3469a252c0533d13f112a44b2f.setIcon(icon_403b295b942f15a904d6d49f513d9df1);
+            
+    
+            var marker_7d4e2382ce3b7befdd24bd97b3c05b50 = L.marker(
+                [24.98013, 121.40858],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_38c80259c4cb7f980586345f533a113c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b0624db153d1d704a9b0ba0030b09c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb0906e5fec0d7611cfee1cf0f291bf0 = $(`<div id="html_eb0906e5fec0d7611cfee1cf0f291bf0" style="width: 100.0%; height: 100.0%;"><b>南樹林火車站</b><br>預估時間: 未知</div>`)[0];
+                popup_6b0624db153d1d704a9b0ba0030b09c7.setContent(html_eb0906e5fec0d7611cfee1cf0f291bf0);
+            
+        
+
+        marker_7d4e2382ce3b7befdd24bd97b3c05b50.bindPopup(popup_6b0624db153d1d704a9b0ba0030b09c7)
+        ;
+
+        
+    
+    
+                marker_7d4e2382ce3b7befdd24bd97b3c05b50.setIcon(icon_38c80259c4cb7f980586345f533a113c);
+            
+    
+            var marker_25f79db5aee49d963cda75e57e1f3a19 = L.marker(
+                [24.9792, 121.406613],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_0579eb21e6cf3871bb86ecff5b95772b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54233c5e577f2b4b885b560ce03cda48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5ae24b6210efa349ce68a52db440d55c = $(`<div id="html_5ae24b6210efa349ce68a52db440d55c" style="width: 100.0%; height: 100.0%;"><b>東山</b><br>預估時間: 未知</div>`)[0];
+                popup_54233c5e577f2b4b885b560ce03cda48.setContent(html_5ae24b6210efa349ce68a52db440d55c);
+            
+        
+
+        marker_25f79db5aee49d963cda75e57e1f3a19.bindPopup(popup_54233c5e577f2b4b885b560ce03cda48)
+        ;
+
+        
+    
+    
+                marker_25f79db5aee49d963cda75e57e1f3a19.setIcon(icon_0579eb21e6cf3871bb86ecff5b95772b);
+            
+    
+            var marker_9c5c6b66d8cdec9e4d52bdc5fa164af0 = L.marker(
+                [24.975931, 121.402015],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_5c7e87c75433a428d9c5ef2b2d9a77f8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0eae918c015b306a3a5d3b3132c44719 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a30a00411f2ea6ac47200a4a0f0b50e9 = $(`<div id="html_a30a00411f2ea6ac47200a4a0f0b50e9" style="width: 100.0%; height: 100.0%;"><b>山佳國小</b><br>預估時間: 未知</div>`)[0];
+                popup_0eae918c015b306a3a5d3b3132c44719.setContent(html_a30a00411f2ea6ac47200a4a0f0b50e9);
+            
+        
+
+        marker_9c5c6b66d8cdec9e4d52bdc5fa164af0.bindPopup(popup_0eae918c015b306a3a5d3b3132c44719)
+        ;
+
+        
+    
+    
+                marker_9c5c6b66d8cdec9e4d52bdc5fa164af0.setIcon(icon_5c7e87c75433a428d9c5ef2b2d9a77f8);
+            
+    
+            var marker_bab634beb72bcee4c111d7baf6d08918 = L.marker(
+                [24.974315, 121.400151],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_8c1a5393e7897d5f30cf3f020ba91396 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_afe1e7b6a70ee1df7fa839ef8453b75f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95f75b5c85c07b93cb40db8029adb51c = $(`<div id="html_95f75b5c85c07b93cb40db8029adb51c" style="width: 100.0%; height: 100.0%;"><b>新興街口</b><br>預估時間: 未知</div>`)[0];
+                popup_afe1e7b6a70ee1df7fa839ef8453b75f.setContent(html_95f75b5c85c07b93cb40db8029adb51c);
+            
+        
+
+        marker_bab634beb72bcee4c111d7baf6d08918.bindPopup(popup_afe1e7b6a70ee1df7fa839ef8453b75f)
+        ;
+
+        
+    
+    
+                marker_bab634beb72bcee4c111d7baf6d08918.setIcon(icon_8c1a5393e7897d5f30cf3f020ba91396);
+            
+    
+            var marker_60c5890bc4cc8b29c0b1bcc6166453be = L.marker(
+                [24.972523, 121.3996193],
+                {
+}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            var icon_81ca81688a9b836e4c3a93aa103eea21 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3ba4bf1296156971b3291c256131993 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fd856ef136c4423463dd58686d5e2f86 = $(`<div id="html_fd856ef136c4423463dd58686d5e2f86" style="width: 100.0%; height: 100.0%;"><b>指南客運樹林站</b><br>預估時間: 未知</div>`)[0];
+                popup_d3ba4bf1296156971b3291c256131993.setContent(html_fd856ef136c4423463dd58686d5e2f86);
+            
+        
+
+        marker_60c5890bc4cc8b29c0b1bcc6166453be.bindPopup(popup_d3ba4bf1296156971b3291c256131993)
+        ;
+
+        
+    
+    
+                marker_60c5890bc4cc8b29c0b1bcc6166453be.setIcon(icon_81ca81688a9b836e4c3a93aa103eea21);
+            
+    
+            var poly_line_87a2e41888d28cb0616d55bd59b8888d = L.polyline(
+                [[24.972523, 121.3996193], [24.974397, 121.400301], [24.975625, 121.401953], [24.97919, 121.40695], [24.979984, 121.4087873], [24.982578, 121.412604], [24.984168, 121.415842], [24.985275, 121.418065], [24.98764, 121.42122], [24.989525, 121.422411], [24.991841, 121.423739], [24.993297, 121.424598], [24.994232, 121.4269598], [24.995638, 121.42796], [24.998244, 121.430021], [25.000554, 121.431245], [25.002077, 121.432111], [25.007867, 121.431869], [25.009369, 121.4299139], [25.010565, 121.4284024], [25.012548, 121.4263087], [25.014531, 121.4260504], [25.016748, 121.426301], [25.018631, 121.426917], [25.02033, 121.427412], [25.020925, 121.427927], [25.020634, 121.430343], [25.02035, 121.433273], [25.021865, 121.4348185], [25.026907, 121.437541], [25.029512, 121.4386329], [25.032954, 121.4408296], [25.0337, 121.4406316], [25.032897, 121.4359666], [25.031472, 121.43385], [25.029839, 121.4345539], [25.027194, 121.43477], [25.024483, 121.434908], [25.021698, 121.4345132], [25.020492, 121.4331789], [25.020838, 121.4302215], [25.021046, 121.4278873], [25.020456, 121.4272815], [25.018738, 121.4268159], [25.01724, 121.42625], [25.01439, 121.4258116], [25.012681, 121.4260776], [25.010583, 121.428101], [25.009224, 121.429871], [25.007896, 121.431591], [25.00196, 121.43183], [25.000126, 121.43087], [24.998348, 121.429919], [24.995035, 121.427318], [24.994234, 121.4267324], [24.993255, 121.4243668], [24.991726, 121.423475], [24.989548, 121.422148], [24.987872, 121.421124], [24.985553, 121.418267], [24.983992, 121.415139], [24.98298, 121.411946], [24.98013, 121.40858], [24.9792, 121.406613], [24.975931, 121.402015], [24.974315, 121.400151], [24.972523, 121.3996193]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_a64c6dcb5ed070500ab6c79727531e61);
+        
+    
+            poly_line_87a2e41888d28cb0616d55bd59b8888d.bindTooltip(
+                `<div>
+                     路線: 800
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b846a9094d2911e940d66e5fa38a2ce8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b846a9094d2911e940d66e5fa38a2ce8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b846a9094d2911e940d66e5fa38a2ce8 = L.map(
+                "map_b846a9094d2911e940d66e5fa38a2ce8",
+                {
+                    center: [25.032691919050475, 121.56497494982317],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 14,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d299253c537654fff52446a53525a7f6 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d299253c537654fff52446a53525a7f6.addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var marker_660663bddcd30a24bba28d9e031bd496 = L.marker(
+                [25.032691919050475, 121.56497494982317],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_2fd13fb746c3a0bad3c909c8b1db5e83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_595d50eef416366916de4112ecc52452 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93fe01e66886b230a408a1cc7ac7d5ff = $(`<div id="html_93fe01e66886b230a408a1cc7ac7d5ff" style="width: 100.0%; height: 100.0%;"><b>捷運西門站</b><br>預估時間: 2 分鐘</div>`)[0];
+                popup_595d50eef416366916de4112ecc52452.setContent(html_93fe01e66886b230a408a1cc7ac7d5ff);
+            
+        
+
+        marker_660663bddcd30a24bba28d9e031bd496.bindPopup(popup_595d50eef416366916de4112ecc52452)
+        ;
+
+        
+    
+    
+                marker_660663bddcd30a24bba28d9e031bd496.setIcon(icon_2fd13fb746c3a0bad3c909c8b1db5e83);
+            
+    
+            var marker_45fb4b56d75fb68b9fef373fe591dd8e = L.marker(
+                [25.033665292267923, 121.56599703005412],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_1b8b041c530d96b8ccebd6a697fbed55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c99b4d7d5541e43add7e3d3a67633b5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bfb5a3b8131915f8417e0a0ed83e34c8 = $(`<div id="html_bfb5a3b8131915f8417e0a0ed83e34c8" style="width: 100.0%; height: 100.0%;"><b>中華路北站</b><br>預估時間: 2 分鐘</div>`)[0];
+                popup_6c99b4d7d5541e43add7e3d3a67633b5.setContent(html_bfb5a3b8131915f8417e0a0ed83e34c8);
+            
+        
+
+        marker_45fb4b56d75fb68b9fef373fe591dd8e.bindPopup(popup_6c99b4d7d5541e43add7e3d3a67633b5)
+        ;
+
+        
+    
+    
+                marker_45fb4b56d75fb68b9fef373fe591dd8e.setIcon(icon_1b8b041c530d96b8ccebd6a697fbed55);
+            
+    
+            var marker_03557a9a4dba2899c438d83161382dca = L.marker(
+                [25.034999942391945, 121.5673823490184],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_fbaf4d34ab234afea232d64b9a5556f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04bd70eb4bf3bd3b683e95325fb62c57 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3295a91e2241eac439146fe13b733dda = $(`<div id="html_3295a91e2241eac439146fe13b733dda" style="width: 100.0%; height: 100.0%;"><b>捷運北門站</b><br>預估時間: 14 分鐘</div>`)[0];
+                popup_04bd70eb4bf3bd3b683e95325fb62c57.setContent(html_3295a91e2241eac439146fe13b733dda);
+            
+        
+
+        marker_03557a9a4dba2899c438d83161382dca.bindPopup(popup_04bd70eb4bf3bd3b683e95325fb62c57)
+        ;
+
+        
+    
+    
+                marker_03557a9a4dba2899c438d83161382dca.setIcon(icon_fbaf4d34ab234afea232d64b9a5556f0);
+            
+    
+            var marker_844751b6bf01514892f689911ad1e0c2 = L.marker(
+                [25.03578882233024, 121.56798701182576],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_338fc6fe431d612fa46023c662d68d22 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e278e471d6739a637d9ef893814e0e9c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_783a5f55e9e4094e41a9d3f06f17ffdd = $(`<div id="html_783a5f55e9e4094e41a9d3f06f17ffdd" style="width: 100.0%; height: 100.0%;"><b>後車站</b><br>預估時間: 13 分鐘</div>`)[0];
+                popup_e278e471d6739a637d9ef893814e0e9c.setContent(html_783a5f55e9e4094e41a9d3f06f17ffdd);
+            
+        
+
+        marker_844751b6bf01514892f689911ad1e0c2.bindPopup(popup_e278e471d6739a637d9ef893814e0e9c)
+        ;
+
+        
+    
+    
+                marker_844751b6bf01514892f689911ad1e0c2.setIcon(icon_338fc6fe431d612fa46023c662d68d22);
+            
+    
+            var marker_27b5e08b007b95975116a17d40f598a2 = L.marker(
+                [25.036699687366443, 121.56893232707968],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_6351a3939f10b0726d51b387f14dae8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_86b4db91bb65a57d06c960497f2bf933 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7bde48abca09738177eac83878c5182 = $(`<div id="html_f7bde48abca09738177eac83878c5182" style="width: 100.0%; height: 100.0%;"><b>圓環(重慶)</b><br>預估時間: 3 分鐘</div>`)[0];
+                popup_86b4db91bb65a57d06c960497f2bf933.setContent(html_f7bde48abca09738177eac83878c5182);
+            
+        
+
+        marker_27b5e08b007b95975116a17d40f598a2.bindPopup(popup_86b4db91bb65a57d06c960497f2bf933)
+        ;
+
+        
+    
+    
+                marker_27b5e08b007b95975116a17d40f598a2.setIcon(icon_6351a3939f10b0726d51b387f14dae8f);
+            
+    
+            var marker_4a87b24feeadcdc4f6f75e66d0b7710b = L.marker(
+                [25.03822668862949, 121.56971369428271],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_80ab6ca688ebe5b320f5bc23d9a60f8c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_546348ca3a8641823979e9ce3a6872f4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_85cd36c7516165cb531379ecf8319b40 = $(`<div id="html_85cd36c7516165cb531379ecf8319b40" style="width: 100.0%; height: 100.0%;"><b>民生重慶路口</b><br>預估時間: 1 分鐘</div>`)[0];
+                popup_546348ca3a8641823979e9ce3a6872f4.setContent(html_85cd36c7516165cb531379ecf8319b40);
+            
+        
+
+        marker_4a87b24feeadcdc4f6f75e66d0b7710b.bindPopup(popup_546348ca3a8641823979e9ce3a6872f4)
+        ;
+
+        
+    
+    
+                marker_4a87b24feeadcdc4f6f75e66d0b7710b.setIcon(icon_80ab6ca688ebe5b320f5bc23d9a60f8c);
+            
+    
+            var marker_4719985d5fdb81770c6a625ac98232d9 = L.marker(
+                [25.039365315451604, 121.57019373690281],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_f4b082af15c1144f22237d0c6df68b81 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_98e85e74b21f9f2b8c13deb493bb18bb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7ea33d99951107aacbb5c9a6d24f80c = $(`<div id="html_a7ea33d99951107aacbb5c9a6d24f80c" style="width: 100.0%; height: 100.0%;"><b>涼州重慶路口</b><br>預估時間: 7 分鐘</div>`)[0];
+                popup_98e85e74b21f9f2b8c13deb493bb18bb.setContent(html_a7ea33d99951107aacbb5c9a6d24f80c);
+            
+        
+
+        marker_4719985d5fdb81770c6a625ac98232d9.bindPopup(popup_98e85e74b21f9f2b8c13deb493bb18bb)
+        ;
+
+        
+    
+    
+                marker_4719985d5fdb81770c6a625ac98232d9.setIcon(icon_f4b082af15c1144f22237d0c6df68b81);
+            
+    
+            var marker_5b8dde4caf092250d8ed8bb998687d33 = L.marker(
+                [25.04000152537497, 121.57053012704067],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_6922e0e22012e54e467b813a8324f347 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6dacfa16e5b5ffc477ae427b2585852e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_91578f917f70701e128f1cb0d8500429 = $(`<div id="html_91578f917f70701e128f1cb0d8500429" style="width: 100.0%; height: 100.0%;"><b>捷運大橋頭站</b><br>預估時間: 4 分鐘</div>`)[0];
+                popup_6dacfa16e5b5ffc477ae427b2585852e.setContent(html_91578f917f70701e128f1cb0d8500429);
+            
+        
+
+        marker_5b8dde4caf092250d8ed8bb998687d33.bindPopup(popup_6dacfa16e5b5ffc477ae427b2585852e)
+        ;
+
+        
+    
+    
+                marker_5b8dde4caf092250d8ed8bb998687d33.setIcon(icon_6922e0e22012e54e467b813a8324f347);
+            
+    
+            var marker_f79bdc4d53d3fc2aea679d45de464287 = L.marker(
+                [25.040878491813444, 121.57137973117068],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_a68118bb990e0890623c5218090fa95e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8565f94bab3373679dd633963f725329 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f39538a7d7f2b03b3afc8778b0d06c90 = $(`<div id="html_f39538a7d7f2b03b3afc8778b0d06c90" style="width: 100.0%; height: 100.0%;"><b>士林官邸(中正)</b><br>預估時間: 12 分鐘</div>`)[0];
+                popup_8565f94bab3373679dd633963f725329.setContent(html_f39538a7d7f2b03b3afc8778b0d06c90);
+            
+        
+
+        marker_f79bdc4d53d3fc2aea679d45de464287.bindPopup(popup_8565f94bab3373679dd633963f725329)
+        ;
+
+        
+    
+    
+                marker_f79bdc4d53d3fc2aea679d45de464287.setIcon(icon_a68118bb990e0890623c5218090fa95e);
+            
+    
+            var marker_1c4c04bb189bc5057ad2a9a11a2129a8 = L.marker(
+                [25.042476898063686, 121.57222927854833],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_cb393f48cb39477be74bef64d4983352 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b04503bac624f1aac55d9ae56d0f67b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9da85f7b461b69daf30faf30d6d9a83f = $(`<div id="html_9da85f7b461b69daf30faf30d6d9a83f" style="width: 100.0%; height: 100.0%;"><b>泰北中學</b><br>預估時間: 11 分鐘</div>`)[0];
+                popup_2b04503bac624f1aac55d9ae56d0f67b.setContent(html_9da85f7b461b69daf30faf30d6d9a83f);
+            
+        
+
+        marker_1c4c04bb189bc5057ad2a9a11a2129a8.bindPopup(popup_2b04503bac624f1aac55d9ae56d0f67b)
+        ;
+
+        
+    
+    
+                marker_1c4c04bb189bc5057ad2a9a11a2129a8.setIcon(icon_cb393f48cb39477be74bef64d4983352);
+            
+    
+            var marker_d44a30731a4de51ced55081aad9534d5 = L.marker(
+                [25.04267918047336, 121.57389906526312],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_13d63b75a0a212dfe80391bf3364fc8e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f708b43c6105e249c3475f44a645b8a6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c4162bb988c047be50784f8afcefd235 = $(`<div id="html_c4162bb988c047be50784f8afcefd235" style="width: 100.0%; height: 100.0%;"><b>雙溪公園</b><br>預估時間: 6 分鐘</div>`)[0];
+                popup_f708b43c6105e249c3475f44a645b8a6.setContent(html_c4162bb988c047be50784f8afcefd235);
+            
+        
+
+        marker_d44a30731a4de51ced55081aad9534d5.bindPopup(popup_f708b43c6105e249c3475f44a645b8a6)
+        ;
+
+        
+    
+    
+                marker_d44a30731a4de51ced55081aad9534d5.setIcon(icon_13d63b75a0a212dfe80391bf3364fc8e);
+            
+    
+            var marker_e9121f7cfa0555a6fca5df4550a363b7 = L.marker(
+                [25.032447381382138, 121.57122111401526],
+                {
+}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            var icon_369434aac3cfdece04bcee5e9593d7b2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d35d597006d835ab6d5b1b8334300e0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fc76aa415a5ff01a934d3535753357f4 = $(`<div id="html_fc76aa415a5ff01a934d3535753357f4" style="width: 100.0%; height: 100.0%;"><b>公車位置</b><br>路線: 300</div>`)[0];
+                popup_7d35d597006d835ab6d5b1b8334300e0.setContent(html_fc76aa415a5ff01a934d3535753357f4);
+            
+        
+
+        marker_e9121f7cfa0555a6fca5df4550a363b7.bindPopup(popup_7d35d597006d835ab6d5b1b8334300e0)
+        ;
+
+        
+    
+    
+                marker_e9121f7cfa0555a6fca5df4550a363b7.setIcon(icon_369434aac3cfdece04bcee5e9593d7b2);
+            
+    
+            var poly_line_c3b2190fce2847a54bc69d6ea5feb02d = L.polyline(
+                [[25.032691919050475, 121.56497494982317], [25.033665292267923, 121.56599703005412], [25.034999942391945, 121.5673823490184], [25.03578882233024, 121.56798701182576], [25.036699687366443, 121.56893232707968], [25.03822668862949, 121.56971369428271], [25.039365315451604, 121.57019373690281], [25.04000152537497, 121.57053012704067], [25.040878491813444, 121.57137973117068], [25.042476898063686, 121.57222927854833], [25.04267918047336, 121.57389906526312]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_b846a9094d2911e940d66e5fa38a2ce8);
+        
+    
+            poly_line_c3b2190fce2847a54bc69d6ea5feb02d.bindTooltip(
+                `<div>
+                     路線: 300
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
