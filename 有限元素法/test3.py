@@ -2,19 +2,22 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-# 1. Mesh generation: center + n_circle points
-n_circle = 12  # 圓周分割數，元素數量也會是 n_circle
-theta = np.linspace(0, 2*np.pi, n_circle+1)[:-1]
-circle_nodes = np.stack([np.cos(theta), np.sin(theta)], axis=1)
-nodes = np.vstack([[0,0], circle_nodes])  # 節點0為中心，其餘為圓周
+# 1. Node coordinates (center, right, top, left, bottom)
+nodes = np.array([
+    [0, 0],      # 0: center
+    [1, 0],      # 1: right
+    [0, 1],      # 2: top
+    [-1, 0],     # 3: left
+    [0, -1]      # 4: bottom
+])
 
-# 2. Element connectivity
-elements = []
-for i in range(n_circle):
-    n1 = 0
-    n2 = i+1
-    n3 = 1 if i+2 > n_circle else i+2
-    elements.append([n1, n2, n3])
+# 2. Element connectivity (four triangles)
+elements = [
+    [0, 1, 2],
+    [0, 2, 3],
+    [0, 3, 4],
+    [0, 4, 1]
+]
 
 # 3. Element stiffness matrix and force vector
 def element_stiffness_matrix(coords):
@@ -47,7 +50,7 @@ for elem in elements:
         F[elem[i]] += fe[i]
 
 # 5. Apply Dirichlet boundary conditions (u=0 on boundary nodes)
-boundary_nodes = list(range(1, num_nodes))
+boundary_nodes = [1, 2, 3, 4]
 for bn in boundary_nodes:
     K[bn, :] = 0
     K[bn, bn] = 1
@@ -62,32 +65,33 @@ def exact_solution(x, y, Gtheta=5, a=1, b=1):
 
 U_exact = np.array([exact_solution(x, y) for x, y in nodes])
 
-# 8. Output table (show first 10 nodes)
+# 8. Output table (in English, with table name)
 df = pd.DataFrame({
     "Node": np.arange(len(nodes)),
     "FEM": U,
     "Exact": U_exact
 })
-print("\nTable 1  Comparison of FEM and Exact Solution (first 10 nodes)")
-print(df.head(10).to_string(index=False))
+print("\nTable 1  Comparison of FEM and Exact Solution")
+print(df.to_string(index=False))
 
 # 9. Plot (dark lines, moderate markers, numbers offset, English caption below)
-plt.figure(figsize=(6,6))
-plt.triplot(nodes[:,0], nodes[:,1], elements, color='navy', linestyle='-', linewidth=1.2)
+plt.figure(figsize=(6,5))
+plt.triplot(nodes[:,0], nodes[:,1], elements, color='navy', linestyle='-', linewidth=1.8)
 plt.tricontourf(nodes[:,0], nodes[:,1], elements, U, cmap='coolwarm', alpha=0.7)
-plt.scatter(nodes[:,0], nodes[:,1], c='k', s=40, marker='o', edgecolors='w', zorder=12)
+plt.scatter(nodes[:,0], nodes[:,1], c='k', s=60, marker='o', edgecolors='w', zorder=12)
 
-# Offset settings for node value labels (radially outward for circle nodes)
-offsets = [(0.3, -0.3)]  # center
-for i in range(n_circle):
-    angle = theta[i]
-    dx = 0.13 * np.cos(angle)
-    dy = 0.13 * np.sin(angle)
-    offsets.append((dx, dy))
+# Offset settings for node value labels (to avoid axis and overlap)
+offsets = [
+    (0.3, -0.3),   # center (move to lower right)
+    (0.10, -0.08), # right
+    (-0.08, 0.10), # top
+    (-0.10, 0.08), # left
+    (0.08, -0.10)  # bottom
+]
 
 for i, (x, y) in enumerate(nodes):
     dx, dy = offsets[i]
-    plt.text(x+dx, y+dy, f"{U[i]:.2f}", color='k', fontsize=10, ha='center', va='center', zorder=20)
+    plt.text(x+dx, y+dy, f"{U[i]:.2f}", color='k', fontsize=12, ha='center', va='center', zorder=20)
 
 plt.colorbar(label='FEM u')
 plt.xlabel('x')
@@ -95,5 +99,5 @@ plt.ylabel('y')
 plt.axis('equal')
 plt.tight_layout()
 plt.subplots_adjust(bottom=0.18)
-plt.figtext(0.5, 0.02, f'Figure 1  FEM Nodal Solution Distribution ({n_circle} Linear Triangular Elements)', ha='center', fontsize=13)
+plt.figtext(0.5, 0.02, 'Figure 1  FEM Nodal Solution Distribution (4 Linear Triangular Elements)', ha='center', fontsize=13)
 plt.show()
